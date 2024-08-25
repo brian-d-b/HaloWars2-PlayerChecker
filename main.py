@@ -1,5 +1,6 @@
 import requests
 import webbrowser
+import os
 
 def check_hw2allunits(url):
     """
@@ -72,4 +73,5 @@ def main():
         print("Invalid choice. Exiting program.")
 
 if __name__ == "__main__":
+    os.system('cls' if os.name == 'nt' else 'clear')
     main()
